@@ -21,10 +21,7 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-//app.UseCors("AllowAngular");
-
 app.UseCors("AllowAll");
-
 
 if (app.Environment.IsDevelopment())
 {

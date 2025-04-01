@@ -24,7 +24,7 @@ export class BooksService {
   }
 
   addBook(book: Book): Observable<any> {
-    return this.http.post<any>(`http://localhost:5046/books`, book, {
+    return this.http.post<any>(`${this.apiUrl}`, book, {
       headers: {
         'Content-Type': 'application/json',
       },
@@ -32,7 +32,7 @@ export class BooksService {
   }
 
   updateBook(book: Book) {
-    return this.http.put(`http://localhost:5046/books/${book.isbn}`, book);
+    return this.http.put(`${this.apiUrl}/${book.isbn}`, book);
   }
 
   deleteBook(isbn: string): Observable<any> {
