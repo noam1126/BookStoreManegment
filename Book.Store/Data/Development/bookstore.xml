@@ -4,6 +4,7 @@
     <isbn>1602</isbn>
     <title>vfdfv</title>
     <author>test</author>
+    <author> hokjf</author>
     <year>1990</year>
     <price>100</price>
   </book>
@@ -17,5 +18,13 @@
     <author>aba</author>
     <year>100</year>
     <price>1900</price>
+  </book>
+  <book category="bdg">
+    <isbn>5646</isbn>
+    <title>noamdc</title>
+    <author>cds</author>
+    <author>vj df v</author>
+    <year>2000</year>
+    <price>130</price>
   </book>
 </bookstore>

@@ -96,7 +96,9 @@ export class AppComponent implements OnInit {
       category: this.currentBook.category,
       isbn: this.currentBook.isbn,
       title: this.currentBook.title,
-      authors: this.currentBook.authors?.split(','),
+      authors: Array.isArray(this.currentBook.authors)
+        ? this.currentBook.authors
+        : this.currentBook.authors?.split(','),
       year: this.currentBook.year,
       price: this.currentBook.price,
     };
@@ -123,7 +125,9 @@ export class AppComponent implements OnInit {
       category: this.currentBook.category,
       isbn: this.currentBook.isbn,
       title: this.currentBook.title,
-      authors: this.currentBook.authors?.split(','),
+      authors: Array.isArray(this.currentBook.authors)
+        ? this.currentBook.authors
+        : this.currentBook.authors?.split(','),
       year: this.currentBook.year,
       price: this.currentBook.price,
     };
