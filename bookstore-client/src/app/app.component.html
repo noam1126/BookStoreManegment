@@ -45,7 +45,12 @@
         />
 
         <label for="isbn">ISBN:</label>
-        <input id="isbn" [(ngModel)]="currentBook.isbn" name="isbn" required />
+        <input
+          id="isbn"
+          [(ngModel)]="currentBook.isbn"
+          name="isbn"
+          [readonly]="isEditMode"
+        />
 
         <label for="title">Title:</label>
         <input
