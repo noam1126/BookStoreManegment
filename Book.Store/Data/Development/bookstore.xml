@@ -5,19 +5,8 @@
     <title>vfdfv</title>
     <author>test</author>
     <author> hokjf</author>
-    <year>1990</year>
+    <year>2019</year>
     <price>100</price>
-  </book>
-  <book category="bdg">
-    <isbn>16022</isbn>
-    <title>asda</title>
-    <author>tal</author>
-    <author>text</author>
-    <author>noam</author>
-    <author>kfir</author>
-    <author>aba</author>
-    <year>100</year>
-    <price>1900</price>
   </book>
   <book category="bdg">
     <isbn>5646</isbn>
@@ -26,5 +15,12 @@
     <author>vj df v</author>
     <year>2000</year>
     <price>130</price>
+  </book>
+  <book category="ds">
+    <isbn>1221</isbn>
+    <title>csjvds</title>
+    <author>csd</author>
+    <year>2010</year>
+    <price>10</price>
   </book>
 </bookstore>
