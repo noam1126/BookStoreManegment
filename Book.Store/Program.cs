@@ -5,13 +5,6 @@ using DM = Book.Store.Models.DM;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("AllowAngular",
-//        policy => policy.WithOrigins("http://localhost:4200")
-//                        .AllowAnyMethod()
-//                        .AllowAnyHeader());
-//});
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",

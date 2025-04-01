@@ -1,44 +1,45 @@
-/* עיצוב בסיסי למיכל */
 .container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+  width: 70%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
+  font-size: 22px;
   color: #333;
+  margin-bottom: 15px;
 }
 
-/* עיצוב כפתור */
 button {
-  background-color: #4caf50;
+  background-color: #3a6d8c;
   color: white;
   border: none;
-  padding: 10px 20px;
-  margin: 10px 0;
+  padding: 8px 16px;
+  margin: 5px 0;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #6a9ab0;
 }
 
-/* עיצוב הטבלה */
 table {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   border-collapse: collapse;
+  font-size: 14px;
 }
 
 table th,
 table td {
-  padding: 12px;
+  padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
@@ -51,7 +52,6 @@ table tr:hover {
   background-color: #f5f5f5;
 }
 
-/* עיצוב הדיאלוג */
 .dialog {
   position: fixed;
   top: 0;
@@ -66,51 +66,58 @@ table tr:hover {
 
 .dialog-content {
   background-color: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 8px;
-  width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dialog h2 {
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 form label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-weight: bold;
+  font-size: 14px;
 }
 
 form input {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 12px;
+  padding: 6px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 form input[readonly] {
   background-color: #f9f9f9;
 }
 
-/* עיצוב עבור כפתור סגירה */
 button[type="submit"] {
   width: 100%;
-  background-color: #007bff;
-  font-size: 18px;
+  background-color: #001f3f;
+  font-size: 16px;
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #004080;
 }
 
 button.close-dialog {
   background-color: #ff5733;
   width: 100%;
+  font-size: 16px;
 }
 
 button.close-dialog:hover {
   background-color: #ff4d31;
+}
+
+td button {
+  margin-right: 8px;
 }

@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <book category="bdg">
-    <isbn>5646</isbn>
-    <title>noamdc</title>
-    <author>cds</author>
-    <author>vj df v</author>
-    <year>2000</year>
-    <price>130</price>
+  <book category="romance">
+    <isbn>1602</isbn>
+    <title>the deal</title>
+    <author>elle kennedy</author>
+    <year>2015</year>
+    <price>14.99</price>
   </book>
-  <book category="ds">
-    <isbn>1221</isbn>
-    <title>csjvds</title>
-    <author>csd</author>
-    <year>2010</year>
-    <price>10</price>
+  <book category="romance">
+    <isbn>12</isbn>
+    <title>it ends with us</title>
+    <author>colleen hoover</author>
+    <year>2021</year>
+    <price>7.89</price>
   </book>
-  <book category="rom">
-    <isbn>444444</isbn>
-    <title>fcrdv</title>
-    <author>cds</author>
-    <year>2839</year>
-    <price>192</price>
+  <book category="romance">
+    <isbn>13</isbn>
+    <title>it start with us</title>
+    <author>colleen hoover</author>
+    <year>2023</year>
+    <price>8</price>
   </book>
 </bookstore>
