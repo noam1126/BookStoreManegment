@@ -1,0 +1,87 @@
+<div class="container">
+  <h1>Book Management</h1>
+
+  <button (click)="openAddBookDialog()">Add Book</button>
+
+  <table *ngIf="books && books.length > 0">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Year</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.category }}</td>
+        <td>{{ book.isbn }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ authorsAsString(book.authors) }}</td>
+        <td>{{ book.year }}</td>
+        <td>{{ book.price | currency }}</td>
+        <td>
+          <button (click)="openEditBookDialog(book)">Edit</button>
+          <button (click)="deleteBook(book.isbn)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p *ngIf="!books || books.length === 0">No books to display at the moment.</p>
+
+  <div *ngIf="isDialogOpen" class="dialog">
+    <div class="dialog-content">
+      <h2>{{ isEditMode ? "Edit Book" : "Add New Book" }}</h2>
+      <form (ngSubmit)="isEditMode ? editBook() : addBook()">
+        <label for="category">Category:</label>
+        <input
+          id="category"
+          [(ngModel)]="currentBook.category"
+          name="category"
+        />
+
+        <label for="isbn">ISBN:</label>
+        <input id="isbn" [(ngModel)]="currentBook.isbn" name="isbn" required />
+
+        <label for="title">Title:</label>
+        <input
+          id="title"
+          [(ngModel)]="currentBook.title"
+          name="title"
+          required
+        />
+
+        <label for="author">Author:</label>
+        <input
+          id="author"
+          [(ngModel)]="currentBook.authors"
+          name="author"
+          required
+        />
+
+        <label for="year">Year:</label>
+        <input
+          id="year"
+          [(ngModel)]="currentBook.year"
+          name="year"
+          type="number"
+        />
+
+        <label for="price">Price:</label>
+        <input
+          id="price"
+          [(ngModel)]="currentBook.price"
+          name="price"
+          type="number"
+        />
+
+        <button type="submit">{{ isEditMode ? "Update" : "Add" }} Book</button>
+      </form>
+      <button (click)="closeDialog()">Close</button>
+    </div>
+  </div>
+</div>
