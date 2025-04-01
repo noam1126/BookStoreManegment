@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <book category="bdg">
+    <isbn>1602</isbn>
+    <title>vfdfv</title>
+    <author>test</author>
+    <year>1990</year>
+    <price>100</price>
+  </book>
+  <book category="bdg">
+    <isbn>16022</isbn>
+    <title>asda</title>
+    <author>tal</author>
+    <author>text</author>
+    <author>noam</author>
+    <author>kfir</author>
+    <author>aba</author>
+    <year>100</year>
+    <price>1900</price>
+  </book>
+</bookstore>

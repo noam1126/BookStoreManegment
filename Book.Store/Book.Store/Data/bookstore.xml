@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <book category="bdg">
+    <isbn>143</isbn>
+    <title>string</title>
+    <author>bgf</author>
+    <year>2000</year>
+    <price>20</price>
+  </book>
+  <book category="string">
+    <isbn>178</isbn>
+    <title>vd</title>
+    <author>string</author>
+    <year>2010</year>
+    <price>320</price>
+  </book>
+  <book category="vfd">
+    <isbn>1467</isbn>
+    <title>vfd</title>
+    <author>vdfv</author>
+    <year>2010</year>
+    <price>1220</price>
+  </book>
+  <book category="vfd">
+    <isbn>24454</isbn>
+    <title>rgtg</title>
+    <author>grt</author>
+    <year>2000</year>
+    <price>10</price>
+  </book>
+  <book category="bdg">
+    <isbn>1602</isbn>
+    <title>fvd</title>
+    <author>test</author>
+    <year>2000</year>
+    <price>30</price>
+  </book>
+</bookstore>
